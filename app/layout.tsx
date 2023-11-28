@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 const inter = Inter({ subsets: ['latin'] })
 
 const font = Nunito({
-  subsets:["latin"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar/>
+        <Navbar />
         {children}
-        
-        </body>
+
+      </body>
     </html>
   )
 }
