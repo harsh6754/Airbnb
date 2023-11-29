@@ -12,7 +12,7 @@ interface ModalProps{
     body?:React.ReactElement;
     footer?:React.ReactElement;
     actionLabel:string;
-    disabled?:string;
+    disabled?:boolean;
     secondaryAction?:()=>void;
     secondaryLabel?:string;
 }
@@ -57,6 +57,7 @@ const Modal:React.FC<ModalProps> = ({
         {
             return;
         }
+        secondaryAction();
     },[disabled,secondaryAction]);
 
     if(!isOpen)
@@ -171,7 +172,11 @@ const Modal:React.FC<ModalProps> = ({
                                                  w-full
                                                  items-center">
 
-                                                    <Button/>
+                                                    <Button
+                                                    disabled={disabled}
+                                                    label={actionLabel}
+                                                    onClick={handleSubmit}
+                                                    />
 
                                             </div>
 
