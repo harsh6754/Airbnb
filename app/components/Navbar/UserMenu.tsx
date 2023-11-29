@@ -66,13 +66,14 @@ const UserMenu = () => {
                  absolute
                  rounded-xl
                  shadow-md
-                 w-[40vw]
+                 md:w-[150px]
+                 w-[150px]
                  md:3/4;
                  bg-white
                  overflow-hidden
                  right-0
                  top-12
-                 text-sm">
+                 text-sm mt-4">
 
                  <div className="
                        flex
