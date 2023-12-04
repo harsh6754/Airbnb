@@ -73,7 +73,7 @@ const UserMenu:React.FC<UserMenuProps> = ({
                              hidden 
                              md:block">
 
-                               <Avatar/>
+                               <Avatar src={currentUser?.image}/>
 
                         </div>
 
